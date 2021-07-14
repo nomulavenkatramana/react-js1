@@ -11,7 +11,8 @@ const Apple=()=>{
             <h2>The value of {score}</h2>
             <button onClick={()=>(score<25?setScore(score+1):"")}>Increment</button>
             <button onClick={()=>(score>0?setScore(score-1) :"")}>Decrement</button>
-            <button onclick={()=>setScore(0)}>Reset</button>
+            <button onClick={()=>{setScore(0)}}> Reset </button>
+
         </div>
     )
 }
